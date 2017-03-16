@@ -3,5 +3,9 @@
 module.exports = greet;
 
 function greet(name, lastName){
-	return('Hello World');
+    if (!name) {
+        return 'Hello stranger';
+    } else {
+        return(`Hello ${name}`);
+    }
 }
